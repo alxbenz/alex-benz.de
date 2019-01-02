@@ -1,0 +1,60 @@
+$background: #efefef;
+$backgroundDark: #2b2636;
+$color: #555555;
+$colorInverse: #efefef;
+$colorLight: #555555;
+$colorDark: #2b2636;
+
+$fontLight: 300;
+$fontNormal: 400;
+$fontBold: 700;
+
+%fontDefault {
+  font-family: 'Merriweather', sans-serif;
+  font-weight: $fontLight;
+  line-height: 1.6em;
+}
+
+%fontHighlight {
+  font-family: 'OpenSans', sans-serif;
+  font-weight: $fontLight;
+  line-height: 1.5em;
+}
+
+strong {
+  font-weight: $fontBold;
+}
+
+.light {
+  font-weight: $fontLight;
+}
+
+body {
+  @extend %fontDefault;
+
+  background: $background;
+  color: $colorLight;
+  font-size: 13px;
+}
+
+h1,
+h2,
+h3 {
+  @extend %fontHighlight;
+  padding: 10px 0;
+}
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p + p {
+  margin-top: 5px;
+}
