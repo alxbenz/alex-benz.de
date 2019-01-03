@@ -40,3 +40,15 @@ export const getReadableEMail = email => {
 export const escapeRegExp = string => {
   return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 };
+
+export const createId = (addOn = '') => {
+  return `${createUUIDv4()}${addOn}`;
+};
+
+export const createUUIDv4 = () => {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    var r = (Math.random() * 16) | 0,
+      v = c === 'x' ? r : (r & 0x3) | 0x8;
+    return v.toString(16);
+  });
+};

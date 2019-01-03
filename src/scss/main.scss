@@ -1,9 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700');
 @import 'reset';
 @import 'defaults';
+@import 'helper';
+
+@import 'hamburger';
 
 .content {
   margin: 0 auto;
+}
+
+.headerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .section {
@@ -14,8 +26,8 @@
     text-align: center;
     padding: 50px 20px;
 
-    @media screen and (min-width: 800px) {
-      padding: 0;
+    @media only screen and (min-width: 800px) {
+      padding: 50px 0;
       display: flex;
       align-items: center;
       min-height: 100vh;
@@ -23,7 +35,7 @@
     }
   }
 
-  a {
+  a:not(.no-style) {
     text-decoration: none;
     padding: 2px 5px;
     transition: opacity 0.3s;
@@ -35,7 +47,7 @@
   &--light {
     background: $background;
     color: $colorLight;
-    a {
+    a:not(.no-style) {
       color: $colorInverse;
       background: $backgroundDark;
     }
@@ -45,22 +57,39 @@
     background: $backgroundDark;
     color: $colorInverse;
 
-    a {
+    a:not(.no-style) {
       color: $colorDark;
       background: $background;
     }
   }
 }
 
+.image {
+  display: none;
+
+  @media only screen and (min-width: 800px) {
+    display: block;
+  }
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  opacity: 0.35;
+  img {
+    height: 100%;
+  }
+}
+
 .intro {
-  @media (min-width: 800px) {
+  @media only screen and (min-width: 800px) {
     width: 150px;
   }
 
   text-align: center;
 
   &__description {
-    @media (min-width: 800px) {
+    @media only screen and (min-width: 800px) {
       transform: rotate(-90deg);
     }
     text-transform: uppercase;
@@ -87,7 +116,7 @@
 }
 
 .contentBox {
-  @media screen and (min-width: 800px) {
+  @media only screen and (min-width: 800px) {
     width: 50%;
     padding: 20px;
   }
@@ -116,4 +145,101 @@
     display: block;
   }
   display: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  box-shadow: 0 -1px 5px $secondary;
+  width: 100%;
+  background: $backgroundDark;
+  z-index: 5;
+
+  height: 40px;
+}
+
+.icons {
+  header & {
+    right: 80px;
+    position: absolute;
+    top: 10px;
+  }
+
+  .icon {
+    header & {
+      margin-right: 10px;
+    }
+    margin-right: 20px;
+    color: $colorInverse;
+  }
+}
+
+.hamburger {
+  right: 20px;
+  color: $colorInverse;
+  background-color: transparent;
+  transition: background-color 0.3s;
+
+  &.is-active {
+    background: $secondary;
+  }
+}
+
+.menu {
+  right: 20px;
+  display: none;
+  background: $secondary;
+  color: $color;
+  top: 35px;
+  position: absolute;
+
+  &.is-open {
+    display: inline-block;
+  }
+
+  ul li {
+    a {
+      padding: 10px 15px;
+
+      display: block;
+      text-decoration: none;
+      color: $colorDark;
+      letter-spacing: 5px;
+
+      &:hover {
+        background: $backgroundDark;
+        color: $colorInverse;
+      }
+    }
+  }
+}
+
+.skills {
+  display: block;
+  @include clearfix();
+  margin: 0 auto;
+  max-width: 320px;
+
+  @media only screen and (min-width: 800px) {
+    max-width: 360px;
+  }
+
+  .progressRing {
+    float: left;
+    margin: 20px;
+    text-align: center;
+    position: relative;
+
+    .progressRing__percentage {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    circle {
+      stroke: orange;
+      fill: transparent;
+    }
+  }
 }

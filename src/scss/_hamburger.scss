@@ -1,0 +1,19 @@
+$hamburger-padding-x: 5px;
+$hamburger-padding-y: 5px;
+$hamburger-layer-width: 20px;
+$hamburger-layer-height: 2px;
+$hamburger-layer-spacing: 4px;
+$hamburger-layer-color: $colorInverse;
+$hamburger-hover-opacity: 1;
+
+@import '../../node_modules/hamburgers/_sass/hamburgers/hamburgers';
+
+.hamburger {
+  position: absolute;
+  right: 0;
+  top: 8px;
+
+  &:focus {
+    outline: 0;
+  }
+}

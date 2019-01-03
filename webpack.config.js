@@ -4,12 +4,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: { main: './src/index.js' },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js'
+    filename: '[name].[chunkhash].js',
+    publicPath: '/'
   },
   devServer: {
     port: 3333,
@@ -48,6 +50,7 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html'
     }),
-    new WebpackMd5Hash()
+    new WebpackMd5Hash(),
+    new CopyWebpackPlugin([{ from: 'src/assets', to: 'assets' }])
   ]
 };
