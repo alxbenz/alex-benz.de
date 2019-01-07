@@ -1,5 +1,6 @@
 export const createRing = (element, id) => {
   const options = {
+    container: element.getAttribute('container') || '.section',
     stroke: element.getAttribute('stroke') || 8,
     radius: element.getAttribute('radius') || 60,
     percentage: element.getAttribute('percentage') || 100,
@@ -40,9 +41,14 @@ export const createRing = (element, id) => {
   </style>
 `;
 
-  window.addEventListener('ringStart', e => {
+  const listener = e => {
+    element
+      .closest(options.container)
+      .removeEventListener('inViewport', listener);
     setProgress(element, options);
-  });
+  };
+
+  element.closest(options.container).addEventListener('inViewport', listener);
 };
 
 export const setProgress = (element, options) => {
