@@ -103,6 +103,7 @@
 }
 
 .entry {
+  z-index: 1;
   @media only screen and (min-width: 768px) {
     max-width: 600px;
   }
@@ -164,18 +165,29 @@ header {
 }
 
 .icons {
+  margin-top: 20px;
+
   header & {
     right: 80px;
     position: absolute;
-    top: 10px;
+    margin-top: 12px;
   }
 
   .icon {
+    margin-right: 20px;
+
     header & {
       margin-right: 10px;
+      color: $colorInverse;
     }
-    margin-right: 20px;
-    color: $colorInverse;
+
+    .section--dark & {
+      color: $colorInverse;
+    }
+
+    .section--light & {
+      color: $backgroundDark;
+    }
   }
 }
 
@@ -222,12 +234,6 @@ header {
 .skills {
   display: block;
   @include clearfix();
-  margin: 0 auto;
-  max-width: 320px;
-
-  @media only screen and (min-width: 768px) {
-    max-width: 360px;
-  }
 
   .progressRing {
     float: left;
@@ -237,14 +243,15 @@ header {
 
     .progressRing__percentage {
       position: absolute;
+      color: $colorInverse;
       top: 50%;
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
     }
 
     circle {
-      stroke: orange;
-      fill: transparent;
+      stroke: $secondary;
+      fill: $backgroundDark;
     }
   }
 }

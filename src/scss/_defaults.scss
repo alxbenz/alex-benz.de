@@ -59,5 +59,9 @@ h3 {
 }
 
 p + p {
-  margin-top: 5px;
+  margin-top: 10px;
+}
+
+.nowrap {
+  white-space: nowrap;
 }

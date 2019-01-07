@@ -75,6 +75,7 @@ const addListeners = () => {
   const hamburger = document.querySelector('.hamburger');
   const menu = document.querySelector('.menu');
   const menuLinks = menu.querySelectorAll('a');
+  const scrollLinks = document.querySelectorAll('.scrollTo');
 
   Array.from(toggles).map(toggle => {
     toggle.addEventListener('click', openToggle);
@@ -83,6 +84,10 @@ const addListeners = () => {
   hamburger.addEventListener('click', toggleMenu);
   menu.addEventListener('click', toggleMenu);
   Array.from(menuLinks).map(link => {
+    link.addEventListener('click', scrollToSection);
+  });
+
+  Array.from(scrollLinks).map(link => {
     link.addEventListener('click', scrollToSection);
   });
 
