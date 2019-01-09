@@ -62,6 +62,9 @@ module.exports = {
       filename: 'profil.html'
     }),
     new WebpackMd5Hash(),
-    new CopyWebpackPlugin([{ from: 'src/assets', to: 'assets' }])
+    new CopyWebpackPlugin([
+      { from: 'src/assets', to: 'assets' },
+      { from: 'src/robots.txt', to: 'robots.txt' }
+    ])
   ]
 };
