@@ -7,7 +7,10 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: { main: './src/index.js' },
+  entry: {
+    main: './src/index.js',
+    profil: './src/profil.js'
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[chunkhash].js',
@@ -15,7 +18,9 @@ module.exports = {
   },
   devServer: {
     port: 3333,
-    open: true
+    open: true,
+    contentBase: path.resolve(__dirname, './src/'),
+    watchContentBase: true
   },
   devtool: 'source-map',
   module: {
@@ -49,6 +54,12 @@ module.exports = {
       hash: true,
       template: './src/index.html',
       filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: true,
+      template: './src/profil.html',
+      filename: 'profil.html'
     }),
     new WebpackMd5Hash(),
     new CopyWebpackPlugin([{ from: 'src/assets', to: 'assets' }])

@@ -1,0 +1,192 @@
+@import 'reset';
+@import 'defaults';
+@import 'helper';
+
+body {
+  color: $colorDark;
+  background: white;
+  font-size: 14px;
+
+  a {
+    color: $colorDark;
+  }
+}
+
+.content {
+  max-width: 842px;
+  margin: 0 auto;
+}
+
+.divider {
+  background: $background;
+  height: 20px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.styleElement {
+  @media print {
+    width: 180px;
+  }
+
+  width: 300px;
+  height: 300px;
+  background: $background;
+  float: left;
+
+  & > span {
+    @extend %fontHighlight;
+    display: block;
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: bold;
+    transform: rotate(-90deg);
+    transform-origin: 0% 0%;
+    left: 50px;
+    top: 300px;
+    position: relative;
+
+    & > span {
+      letter-spacing: 7px;
+    }
+  }
+}
+
+.wrapper {
+  @include clearfix();
+}
+
+.image {
+  width: 300px;
+  float: left;
+  img {
+    width: 100%;
+  }
+}
+
+.personal {
+  float: left;
+  padding: 58px 50px;
+}
+
+.intro,
+.sectionContainer {
+  box-sizing: border-box;
+  clear: both;
+  padding: 30px;
+  max-width: 600px;
+}
+.break {
+  page-break-after: always;
+}
+
+.quali {
+  padding: 50px 30px;
+
+  ul {
+    margin: 10px 0 20px;
+
+    &.fullSize {
+      li {
+        & > span:nth-child(1) {
+          width: 100%;
+        }
+      }
+    }
+    li {
+      margin: 10px 0;
+
+      span {
+        display: inline-block;
+      }
+
+      & > span:nth-child(1) {
+        width: 300px;
+      }
+      & > span:nth-child(2) {
+        width: 100px;
+      }
+      & > span:nth-child(3) {
+        width: 240px;
+      }
+    }
+  }
+}
+
+.level {
+  vertical-align: bottom;
+  span {
+    height: 16px;
+    width: 16px;
+
+    @media print {
+      margin: 0;
+      height: 0;
+      width: 0;
+      display: none;
+    }
+
+    &.full {
+      background: $secondary;
+      margin-right: 5px;
+    }
+
+    &.empty {
+      background: $background;
+      margin-right: 5px;
+    }
+    &:last-child {
+      margin-right: 20px;
+    }
+  }
+}
+
+.project,
+.job {
+  margin: 20px 0;
+
+  &__date {
+    border-bottom: 5px solid $background;
+    width: 170px;
+    float: left;
+    text-align: right;
+    position: relative;
+    left: -40px;
+  }
+
+  &__position {
+    font-weight: bold;
+  }
+
+  &__company {
+    clear: both;
+    margin-top: 10px;
+    margin-left: 170px;
+  }
+
+  &__description {
+    margin-top: 10px;
+    font-style: italic;
+  }
+
+  &__skills {
+    margin-top: 10px;
+  }
+}
+
+.degree {
+  span {
+    display: inline-block;
+  }
+  span:nth-child(1) {
+    width: 50px;
+  }
+  span:nth-child(2) {
+    width: 450px;
+  }
+  span:nth-child(3) {
+    margin-left: 50px;
+  }
+}
