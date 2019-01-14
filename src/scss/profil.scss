@@ -191,3 +191,9 @@ body {
     margin-left: 50px;
   }
 }
+
+.noPrint {
+  @media print {
+    display: none;
+  }
+}
