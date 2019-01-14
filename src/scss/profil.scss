@@ -118,8 +118,9 @@ body {
 .level {
   vertical-align: bottom;
   span {
-    height: 16px;
-    width: 16px;
+    height: 0px;
+    width: 0px;
+    border: 6px solid transparent;
 
     @media print {
       margin: 0;
@@ -129,12 +130,12 @@ body {
     }
 
     &.full {
-      background: $secondary;
+      border-color: $secondary;
       margin-right: 5px;
     }
 
     &.empty {
-      background: $background;
+      border-color: $background;
       margin-right: 5px;
     }
     &:last-child {
