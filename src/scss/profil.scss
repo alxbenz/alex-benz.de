@@ -48,6 +48,10 @@ body {
     top: 300px;
     position: relative;
 
+    .en & {
+      letter-spacing: 2.8px;
+    }
+
     & > span {
       letter-spacing: 7px;
     }
@@ -196,4 +200,9 @@ body {
   @media print {
     display: none;
   }
+}
+
+.menu {
+  margin-top: 10px;
+  text-align: right;
 }

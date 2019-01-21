@@ -61,6 +61,12 @@ module.exports = {
       template: './src/profil.html',
       filename: 'profil.html'
     }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: true,
+      template: './src/profil.en.html',
+      filename: 'profil.en.html'
+    }),
     new WebpackMd5Hash(),
     new CopyWebpackPlugin([
       { from: 'src/assets', to: 'assets' },
