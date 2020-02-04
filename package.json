@@ -16,7 +16,7 @@
     "autoprefixer": "^9.7.4",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^1.0.1",
-    "copy-webpack-plugin": "^4.6.0",
+    "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^2.1.1",
     "fullpage.js": "^3.0.8",
     "hamburgers": "^1.1.3",
