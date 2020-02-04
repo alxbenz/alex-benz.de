@@ -22,7 +22,7 @@
     "hamburgers": "^1.1.3",
     "hlpr": "git+https://github.com/alxbenz/hlpr.git",
     "html-webpack-plugin": "^3.2.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.11.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
