@@ -159,6 +159,7 @@ body {
     text-align: right;
     position: relative;
     left: -40px;
+    padding: 1px 8px 1px 1px;
   }
 
   &__position {
@@ -168,7 +169,7 @@ body {
   &__company {
     clear: both;
     margin-top: 10px;
-    margin-left: 170px;
+    margin-left: 179px;
   }
 
   &__description {
@@ -178,6 +179,10 @@ body {
 
   &__skills {
     margin-top: 10px;
+  }
+
+  &--ongoing .project__date {
+    border-color: $secondary;
   }
 }
 
