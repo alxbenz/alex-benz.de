@@ -1,0 +1,197 @@
+{
+  "de": {
+    "title": "alex-benz.de - frontend / js software engineer",
+    "description": "Ich bin Alex Benz und selbstständiger Frontend Entwickler.",
+    "keywords": "Frontend, Applikation, Entwickler",
+    "name": "Alexander Benz",
+    "address": "Amalie-Tonoli-Str. 11, 77652 Offenburg",
+    "phone": "+vierneun einssiebensechs vierdreivier neunfünfneun fünfvier",
+    "email": "web[at]alex[minus]benz[punkt]de",
+    "website": "www.alex-benz.de",
+    "birth_year": "1985",
+    "intro": "Hallo, ich bin Alex Benz und seit Januar 2019 selbstständiger Frontend Entwickler.",
+    "specialties": ["HTML5", "CSS3", "JavaScript", "React", "Vue.js"],
+    "projects": [
+      
+      {
+        "date": "11/2022 - ongoing",
+        "position": "Frontend Developer, ReactJS",
+        "company": "mdeg digital GmbH, Freiburg",
+        "description": "Entwicklung einer Web-Applikation für die medizinische Früherkennung bei Schwangerschaftskomplikationen.",
+        "skills": "ReactJS, React Router, React Redux, SCSS, TypeScript, JavaScript ES6, REST API, KeyCloak Auth"
+      },
+      {
+        "date": "01/2022 - 12/2022",
+        "position": "Frontend Developer, ReactJS",
+        "company": "Virtual Identity, Freiburg",
+        "description": "Unterstützung der Agentur bei einem open source Projekt: Entwicklung einer Chat Plattform",
+        "skills": "ReactJS, React Router, SCSS, TypeScript, JavaScript ES6, REST API, KeyCloak Auth"
+      },
+      {
+        "date": "12/2021 - 02/2022",
+        "position": "Frontend Developer, ReactJS",
+        "company": "whitebox GmbH, Freiburg",
+        "description": "Entwicklung einiger interaktiver Finanzrechner zur Integration auf der Webseite",
+        "skills": "ReactJS, SCSS, TypeScript, JavaScript ES6"
+      },
+      {
+        "date": "10/2021 - ongoing",
+        "position": "Frontend Developer, VueJS",
+        "company": "brainson GmbH, Freiburg",
+        "description": "Unterstützung der Agentur bei einem VueJS Projekt: Umsetzung einer Webseite als Single Page Applikation.",
+        "skills": "VueJS, Vuex, Vue Router, JavaScript ES6, REST, SCSS"
+      },
+      {
+        "date": "06/2021 - 09/2021",
+        "position": "Frontend Developer, ReactJS",
+        "company": "viable GmbH, Wien",
+        "description": "Entwicklung einer ReactJS Webapplikation im Finanzbereich",
+        "skills": "ReactJS, SCSS, TypeScript, JavaScript ES6"
+      }
+    ],
+    "skills": [
+      {
+        "name": "HTML5",
+        "level": "Expert",
+        "category": "Web Development"
+      },
+      {
+        "name": "CSS3",
+        "level": "Expert",
+        "category": "Web Development"
+      },
+      {
+        "name": "JavaScript",
+        "level": "Expert",
+        "category": "Web Development"
+      },
+      {
+        "name": "React",
+        "level": "Expert",
+        "category": "Web Development"
+      },
+      {
+        "name": "Vue.js",
+        "level": "Intermediate",
+        "category": "Web Development"
+      },
+      {
+        "name": "TypeScript",
+        "level": "Intermediate",
+        "category": "Web Development"
+      },
+      {
+        "name": "SCSS",
+        "level": "Expert",
+        "category": "Web Development"
+      },
+      {
+        "name": "REST API",
+        "level": "Expert",
+        "category": "Web Development"
+      },
+      {
+        "name": "KeyCloak Auth",
+        "level": "Intermediate",
+        "category": "Web Development"
+      }
+    ]
+  },
+  "en": {
+    "title": "alex-benz.de - frontend / js software engineer",
+    "description": "I'm Alex Benz and a freelance frontend developer.",
+    "keywords": "Frontend, Application, Developer",
+    "name": "Alexander Benz",
+    "address": "Amalie-Tonoli-Str. 11, 77652 Offenburg",
+    "phone": "+four nine one seven six three four nine five nine five four",
+    "email": "web[at]alex[minus]benz[dot]de",
+    "website": "www.alex-benz.de",
+    "birth_year": "1985",
+    "intro": "Hi, I'm Alex Benz and a freelance frontend developer since January 2019.",
+    "specialties": ["HTML5", "CSS3", "JavaScript", "React", "Vue.js"],
+    "projects": [
+      {
+        "date": "11/2022 - ongoing",
+        "position": "Frontend Developer, ReactJS",
+        "company": "mdeg digital GmbH, Freiburg",
+        "description": "Development of a web application for medical early detection of pregnancy complications.",
+        "skills": "ReactJS, React Router, React Redux, SCSS, TypeScript, JavaScript ES6, REST API, KeyCloak Auth"
+      },
+      {
+        "date": "01/2022 - 12/2022",
+        "position": "Frontend Developer, ReactJS",
+        "company": "Virtual Identity, Freiburg",
+        "description": "Supporting the agency on an open source project: development of a chat platform",
+        "skills": "ReactJS, React Router, SCSS, TypeScript, JavaScript ES6, REST API, KeyCloak Auth"
+      },
+      {
+        "date": "12/2021 - 02/2022",
+        "position": "Frontend Developer, ReactJS",
+        "company": "whitebox GmbH, Freiburg",
+        "description": "Development of some interactive financial calculators for integration on the website",
+        "skills": "ReactJS, SCSS, TypeScript, JavaScript ES6"
+      },
+      {
+        "date": "10/2021 - ongoing",
+        "position": "Frontend Developer, VueJS",
+        "company": "brainson GmbH, Freiburg",
+        "description": "Supporting the agency on a VueJS project: implementation of a website as a single page application.",
+        "skills": "VueJS, Vuex, Vue Router, JavaScript ES6, REST, SCSS"
+      },
+      {
+        "date": "06/2021 - 09/2021",
+        "position": "Frontend Developer, ReactJS",
+        "company": "viable GmbH, Wien",
+        "description": "Development of a ReactJS web application in the financial sector",
+        "skills": "ReactJS, SCSS, TypeScript, JavaScript ES6"
+      }
+    ],
+    "skills": [
+      {
+        "name": "HTML5",
+        "level": "Expert",
+        "category": "Web Development"
+      },
+      {
+        "name": "CSS3",
+        "level": "Expert",
+        "category": "Web Development"
+      },
+      {
+        "name": "JavaScript",
+        "level": "Expert",
+        "category": "Web Development"
+      },
+      {
+        "name": "React",
+        "level": "Expert",
+        "category": "Web Development"
+      },
+      {
+        "name": "Vue.js",
+        "level": "Intermediate",
+        "category": "Web Development"
+      },
+      {
+        "name": "TypeScript",
+        "level": "Intermediate",
+        "category": "Web Development"
+      },
+      {
+        "name": "SCSS",
+        "level": "Expert",
+        "category": "Web Development"
+      },
+      {
+        "name": "REST API",
+        "level": "Expert",
+        "category": "Web Development"
+      },
+      {
+        "name": "KeyCloak Auth",
+        "level": "Intermediate",
+        "category": "Web Development"
+      }
+    ]
+  }
+}
